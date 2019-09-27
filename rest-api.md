@@ -74,7 +74,7 @@ m -> minutes; h -> hours; d -> days; w -> weeks; M -> months
 ## Market Data endpoints
 ### Order book
 ```
-GET /api/v1/depth
+GET v1/public/depth
 ```
 
 
@@ -104,7 +104,7 @@ symbol | STRING | YES |
 
 ### Recent trades list
 ```
-GET /api/v1/trades
+GET v1/public/trades
 ```
 Get recent trades (up to last 500).
 
@@ -132,7 +132,7 @@ limit | INT | NO | Default 500
 
 ### 24hr ticker price change statistics
 ```
-GET /api/v1/ticker/24hr
+GET /v1/public/ticker/24hr
 ```
 24 hour rolling window price change statistics. **Careful** when accessing this with no symbol.
 
